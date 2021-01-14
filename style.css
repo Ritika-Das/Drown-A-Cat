@@ -81,9 +81,11 @@ button:hover {
 #word {
     text-align: center;
     font-size: xx-large;
+    font-weight: 700;
 }
 
 #keyboard {
     text-align: center;
     font-size: xx-large;
+    font-weight: 400;
 }
