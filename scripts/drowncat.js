@@ -79,7 +79,7 @@ window.onload = function () {
 
     var hidden = answerString;
     for (let index = 0; index < answerString.length; index++) {
-        hidden[index] = "* ";
+        hidden[index] = "_ ";
     }
 
     document.getElementById("word").innerHTML = hidden.join('');
