@@ -1,5 +1,4 @@
 window.onload = function () {
-    console.log("Loaded!");
     var wordList = [ // 56 food words damn!
         "almond",
         "apple",
@@ -76,19 +75,18 @@ window.onload = function () {
 
     for (let i=0; i<answerString.length; i++) {
         console.log("_ ");
-        
-    
     }
 
-    document.getElementById("word").innerHTML = answer;
-    //document.getElementById("word").innerHTML = "_ ";
+    var hidden = answerString;
+    for (let index = 0; index < answerString.length; index++) {
+        hidden[index] = "* ";
+    }
+
+    document.getElementById("word").innerHTML = hidden.join('');
 
     alphabet.forEach(skim);
     function skim(item) {
         document.getElementById("keyboard").innerHTML += item + " ";
     }
 
-
 }
-
-console.log("Not loaded fully yet!");
